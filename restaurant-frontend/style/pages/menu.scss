@@ -1,0 +1,50 @@
+.menu-section{
+    .menu-navbar{
+        width: fit-content;
+        margin: 0 auto;
+        border-bottom: 1px solid #dee2e6 !important;
+        transition: .5s ease-in;
+        margin-bottom: 3rem;
+
+        .item{
+            padding-bottom: 1rem !important;
+            margin: 0 1rem;
+            gap: 10px;
+            cursor: pointer;
+            
+            .icon{
+                font-size: 2.6rem;
+                color: #FEA116 !important;
+            }
+            p{
+                margin-bottom: unset;
+            }
+
+            &.active{
+                border-bottom: 2px solid #FEA116;
+            }
+        }
+    }
+    .food-Item-List{
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .item{
+            width: 45%;
+           .content{
+            margin: auto 0;
+            .title-amount{
+                border-bottom: 1px solid #dee2e6 !important;
+
+                .price{
+                    color: #FEA116;
+                }
+            }
+            p{
+                margin-bottom: unset;
+                margin-top: .5rem;
+            }
+           }
+        }
+    }
+}

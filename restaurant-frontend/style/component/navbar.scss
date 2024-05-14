@@ -1,0 +1,105 @@
+.container-xxl {
+  background: linear-gradient(rgba(15, 23, 43, 0.9), rgba(15, 23, 43, 0.9)),
+    url(../../public/bg-hero.jpg);
+  background-position: center;
+  background-size: cover;
+
+  .navbar {
+    .collapse-menu {
+      .nav-links {
+        .nav-link {
+          text-decoration: none;
+          color: #f1f8ff;
+          margin-left: 25px;
+          padding: 35px 0;
+          font-size: 15px;
+          text-transform: uppercase;
+          font-weight: 500;
+          outline: none;
+          transition: 0.5s;
+
+          &.dropdown-item {
+            padding: 5px 0;
+            margin-left: 0;
+            color: #666565;
+            background-color: #fff;
+            width: 100%;
+            text-align: center;
+
+            &:hover {
+              color: #666565;
+              background-color: #fea116;
+            }
+
+            &.active {
+              color: #666565;
+              background-color: #fea116;
+            }
+          }
+
+          &:hover {
+            color: #fea116;
+          }
+
+          &.dropdown {
+            min-width: 50px;
+
+            #dropdownContent {
+              z-index: 1000;
+              min-width: 10rem;
+              padding: 0.5rem 0;
+              margin: 0;
+              font-size: 1rem;
+              color: #666565;
+              background-color: #fff;
+              background-clip: padding-box;
+              border: 1px solid rgba(0, 0, 0, 0.15);
+              border-radius: 2px;
+              margin-top: 20px;
+            }
+
+            &:hover #dropdownContent {
+              display: flex;
+              flex-direction: column;
+            }
+          }
+
+          &.active {
+            color: #fea116;
+          }
+        }
+      }
+    }
+  }
+  .hero-container {
+    padding-bottom: 8rem;
+    .hero-title {
+      font-size: calc(1.525rem + 3.3vw);
+      font-weight: 800;
+      line-height: 1.2;
+      color: #fff;
+      font-family: "Nunito", sans-serif;
+    }
+    .navigated-path {
+      color: #fea116;
+      text-decoration: inherit;
+      list-style-type: none;
+      gap: 10px;
+      text-transform: uppercase !important;
+    }
+    .left-container {
+      flex: 1;
+
+      .desc {
+        color: #fff;
+      }
+    }
+    .right-container {
+      flex: 1;
+      .img {
+        object-fit: contain;
+        animation: imgRotate 50s linear infinite;
+      }
+    }
+  }
+}

@@ -1,0 +1,77 @@
+.home-card-conatiner {
+  .wrapper {
+    margin: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    .card {
+      min-width: 250px;
+      flex: 1;
+      box-shadow: 0 0 45px rgba(0, 0, 0, 0.08);
+      transition: 0.5s;
+      border-radius: 2px;
+      padding: 1.5rem;
+      padding-top: 1rem;
+
+
+
+      &:hover {
+        background-color: #fea116;
+        color: #fff;
+
+        div {
+          .icon {
+            color: #fff;
+          }
+        }
+        .title {
+          color: #fff;
+        }
+      }
+      div {
+        .icon {
+          font-size: 3rem;
+          color: #fea116;
+        }
+      }
+
+      &:nth-child(1) {
+        animation: fadeInUp 0.5s ease forwards 0.1s;
+      }
+
+      &:nth-child(2) {
+        animation: fadeInUp 0.5s ease forwards 0.2s;
+      }
+
+      &:nth-child(3) {
+        animation: fadeInUp 0.5s ease forwards 0.3s;
+      }
+
+      &:nth-child(4) {
+        animation: fadeInUp 0.5s ease forwards 0.4s;
+      }
+    }
+    &:nth-child(1){
+        visibility: visible;
+        animation-delay: 0.1s;
+        animation: fadeInUp;
+  }
+  
+  &:nth-child(2){
+      visibility: visible;
+      animation-delay: 0.2s;
+      animation: fadeInUp;
+  }
+  
+  &:nth-child(3){
+      visibility: visible;
+      animation-delay: 0.3s;
+      animation: fadeInUp;
+  }
+  
+  &:nth-child(4){
+      visibility: visible;
+      animation-delay: 0.4s;
+      animation: fadeInUp;
+  }
+  }
+}

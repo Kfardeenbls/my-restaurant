@@ -1,0 +1,32 @@
+.teams-section {
+//   background-color: #f1f8ff;
+
+  .teams-card-conatiner {
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .card {
+      background-color: #fff;
+      min-width: 210px;
+      max-width: 300px;
+      box-shadow: 0 0 45px rgba(0, 0, 0, 0.08);
+
+      .img-container {
+        border-radius: 50%;
+        height: 220px;
+        width: 220px;
+        overflow: hidden;
+        img {
+          transition: transform 0.5s ease-in-out;
+
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
+      .details {
+        align-items: center;
+      }
+    }
+  }
+}

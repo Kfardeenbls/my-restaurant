@@ -1,0 +1,76 @@
+.card-carousel{
+    transition: .5s ease-in-out;
+
+    .card-wrapper{
+    overflow-x: scroll;
+    justify-content: center;
+    scrollbar-width: none;
+    padding-bottom: 1rem;
+    transition: .5s ease-in-out;
+    &::-webkit-scrollbar{
+        display: none;
+    }
+
+    .card{
+        max-width: 300px;
+        min-width: 250px;
+        background-color: #fff;
+        transition: .5s ease-in-out;
+        border: 1px solid rgb(238, 224, 224);
+
+        .icon{
+            color: #fea116;
+            font-size: 3rem;
+            margin-right: auto;
+        }
+        .content{
+            margin-top: auto;
+            .avatar{
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                overflow: hidden;
+            }
+        }
+
+        &.active{
+            background-color: #fea116;
+
+            .icon{
+                color: #fff;
+            }
+
+            .desc{
+                color: #fff;
+            }
+
+            .content{
+                .name-and-prof{
+                    .name{
+                        color: #fff;
+                    }
+                    p{
+                        color: #fff !important;
+                    }
+                }
+            }
+        }
+    }
+   } 
+   .dots{
+       justify-content: center;
+       align-items: center;
+
+    .dot{
+        border: 1px solid rgb(177, 169, 169);
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        cursor: pointer;
+
+        &.active{
+            background-color: #fea116;;
+        }
+    }
+   }
+}
